@@ -13,7 +13,7 @@
         $db_link->query("SET NAMES 'utf8'");//使用utf8解析
     };
     $sendToSqlData = "SELECT * FROM `msg` ORDER BY `id` DESC";
-    //這變數，是儲存要送給sql的敘述句 
+    //這變數，是儲存要送給sql的敘述句
 
     $allData = $db_link->query($sendToSqlData);
     //$allData 將上面的敘述具 送給連結了資料庫的 $db_link，因此會得到msg 此資料表
